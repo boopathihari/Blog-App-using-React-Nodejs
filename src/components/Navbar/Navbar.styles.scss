@@ -1,0 +1,70 @@
+.Navbar-container{
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+
+    .Top-icon{
+        font-size: 2rem;
+        color: #495057;
+        padding: 0.4rem;
+    }
+
+     .top-left,.top-right{
+        flex: 3;  
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+     }
+    
+     .top-center{
+        flex: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .navLinks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            font-size: 2rem;   
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            gap: 1.5rem;
+
+            .navLink{
+                cursor: pointer;
+            }
+         }
+
+
+    }
+
+    
+    .profile{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+
+    .top-right{
+        gap: 1rem;
+
+
+        .search-icon{
+            font-size: 2rem;
+            cursor: pointer;
+            color: #495057;
+        }
+    }
+
+}
+
+
