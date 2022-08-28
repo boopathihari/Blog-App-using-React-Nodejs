@@ -1,0 +1,89 @@
+.Setting-container{
+    width: 60%;
+    margin: 0 auto;
+
+    .form-head{
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0rem;
+        font-family: 'Lora', serif;
+        font-weight: 500;
+        
+        .form-title{
+            font-size: 2.6rem;
+        }
+        
+        .form-delete{
+            font-size: 1.6rem;
+            color: #f03e3e;
+            cursor: pointer;
+        }
+
+    }
+
+    .profile-title{
+        font-size: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .settingPP{
+        margin-top: 1rem;
+        width: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .profile-img{
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+
+        .user-profile-icon{
+            font-size: 2rem;
+            cursor: pointer;
+            color: #495057;
+        }
+    }
+
+    .form-body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0rem;
+        font-size: 2rem;
+
+        label{
+            margin-top: 2rem;
+            color: #495057;
+        }
+
+        input{
+            border: none;
+            padding: 1.4rem 2rem;
+            font-size: 1.6rem;
+            border-bottom: 1px solid #adb5bd;
+            color: #adb5bd;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .settingSubmit{
+            background-color: #40c057;
+            padding: 1.6rem 1rem;
+            width: 15%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            border: none;
+            color: white;
+            font-size: 1.4rem;            
+        }
+    }
+
+}
+

@@ -1,7 +1,9 @@
 import React from 'react'
 import './Navbar.styles.scss';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
+  const user = false;
   return (
     <div className='Navbar-container'>
         <div className="top-left">
@@ -13,16 +15,37 @@ export default function Navbar() {
 
         <div className="top-center">
             <ul className='navLinks'>
-                <li className='navLink'>Home</li>
-                <li className='navLink'>About</li>
-                <li className='navLink'>Contact</li>
-                <li className='navLink'>Write</li>
-                <li className='navLink'>Logout</li>
+                <li className='navLink'>
+                  <Link className='link' to='/'>HOME</Link>
+                  </li>
+                <li className='navLink'>
+                  <Link className='link' to='/'>ABOUT</Link>
+                </li>
+                <li className='navLink'>
+                  <Link className='link' to='/'>CONTACT</Link>
+                </li>
+                <li className='navLink'>
+                  <Link className='link' to='/write'>WRITE</Link>
+                </li>
+                <li className='navLink'>
+                  {user && "LOGOUT"}
+                </li>
             </ul>
         </div>
 
         <div className="top-right">
-          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="profile" className='profile' />
+          { 
+            user ? <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="profile" className='profile' />
+            :
+             <ul className='navLinks'>
+                <li className='navLink'>
+                  <Link className='link' to='/login'>LOGIN</Link>
+                </li>
+                <li className='navLink'>
+                  <Link className='link' to='/register'>REGISTER</Link>
+                </li>
+              </ul>
+          }
           <i className='search-icon fa-solid fa-magnifying-glass'></i>
         </div>
     </div>

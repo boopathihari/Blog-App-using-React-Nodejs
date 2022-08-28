@@ -26,25 +26,26 @@
         justify-content: center;
         align-items: center;
     
-        .navLinks{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            font-size: 2rem;   
-            font-family: 'Josefin Sans', sans-serif;
-            text-transform: uppercase;
-            font-weight: 400;
-            gap: 1.5rem;
-
-            .navLink{
-                cursor: pointer;
-            }
-         }
+      
 
 
     }
 
+    .navLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size: 2rem;   
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        gap: 1.5rem;
+
+        .navLink{
+            cursor: pointer;
+        }
+     }
     
     .profile{
         width: 4rem;
@@ -59,6 +60,7 @@
 
 
         .search-icon{
+            margin-left: 1rem;
             font-size: 2rem;
             cursor: pointer;
             color: #495057;

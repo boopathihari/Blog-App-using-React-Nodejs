@@ -1,0 +1,65 @@
+.write-container{
+    padding: 5rem;
+
+    .writeForm{
+        position: relative;
+
+        .blog-img{
+            margin-left: 15rem;
+            width: 70vw;
+            height: 25rem;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    }
+
+    .writeFormGroup{
+        margin-left: 15rem;
+        display: flex;
+        align-items: center;
+
+
+        .writeIcon{
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color:#868e96;
+            font-size: 2rem;
+        }
+
+
+        .writeInput{
+            font-size: 3rem;
+            border: none;
+            padding: 2rem;
+            width: 70vw;
+        
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .writeText{
+            font-size: 2rem;
+        }
+    }
+
+    .writeSubmit{
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+        color: white;
+        background-color: #37b24d;
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1.6rem;
+    }
+
+}
